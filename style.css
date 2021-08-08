@@ -7,7 +7,7 @@ h1 {
     min-height: 50px;
     padding: 20px;
     border: 1px solid grey;
-    margin: 0 auto;
+    margin: 0 auto 15px;
     display: flex;
     flex-direction: column;
 }
