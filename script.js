@@ -34,3 +34,21 @@ const reducer = ( prevState = initialState, action ) => {
 			return prevState;
 	}
 }
+
+// CREATE STORE
+const store = Redux.createStore(reducer);
+
+// Initialize number of phones on store creation
+const availablePhones = document.getElementById('count');
+availablePhones.innerHTML = store.getState().phones;
+
+// Set buy-phone button onClick action
+const buyPhoneBtn = document.getElementById('buy-phone');
+buyPhoneBtn.addEventListener('click', () => {
+	store.dispatch(buyPhone());
+});
+
+// Subscrire to every store state change
+store.subscribe(() => {
+	availablePhones.innerHTML = store.getState().phones;
+});
