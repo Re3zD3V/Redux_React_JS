@@ -17,7 +17,7 @@ img {
 	width: 100%;
 }
 
-#count-phones, #count-tablets, #count-tvs {
+#count-phones, #count-tablets, #count-tvs, #count-coolers {
     font-weight: bold;
     font-size: 30px;
 }
